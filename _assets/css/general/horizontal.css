@@ -1,0 +1,38 @@
+* {
+    /*
+    For smooth text transforms (FF), we need these combined with transformZ(0.01px),
+    to force GPU rendering?
+     */
+    transform: translateX(0) translateZ(0.0001px);
+    transform-style: preserve-3d;
+    perspective: 1px;
+    text-rendering: geometricPrecision;
+    -webkit-font-smoothing: subpixel-antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+
+#horizontal {
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    min-width: 100vw;
+    min-height: 100vh;
+    height: 100vh;
+    overflow: auto hidden;
+    /*width: fit-content;*/
+}
+
+.work-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    min-height: 100vh;
+}
+
+.full-page {
+    min-width: 100vw;
+    min-height: 100vh;
+    width: 100vw;
+    height: 100vh;
+}

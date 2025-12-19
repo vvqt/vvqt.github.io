@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Markus Björkberger // Non-Machine Learning</title>
+    <link rel="icon" type="image/png" href="../_assets/favicon.png">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="../_assets/css/horizontal.css"/>
+
+    <style>
+        * {
+            box-sizing: border-box;
+            z-index: 1;
+        }
+
+        html,
+        body {
+            overflow: hidden;
+            width: 100%; height: 100%;
+            padding: 0;
+            margin: 0;
+            border: 0;
+            background: #111;
+            /*z-index: -1;*/
+            scrollbar-color: #555 darkgrey ;
+            scrollbar-width: thin;
+        }
+
+        :root {
+            --horizontal-panel-aspect: 16/9;
+        }
+    </style>
+
+    <link rel="stylesheet" href="bg-video.css"/>
+
+    <script src="../_assets/js/config.js"></script>
+    <script src="../_assets/js/horizontal.js" type="module"></script>
+</head>
+<body>
+<!-- Dummy to make FF load styles before render -->
+    <script>0</script>
+    <div class="video-bg-container">
+        <video id="bgPlayer" autoplay loop muted playsInline preload="auto" width="1920" height="1080">
+            <source src="assets/non-machine1_1.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <main id="horizontal">
+        <header class="splash-title splash-inline">
+            <h1 lang="en">
+                <span lang="en">Non-Machine</span>
+                <span lang="en">Learning</span>
+            </h1>
+        </header>
+
+        <section id="Installation">
+            <div class="horizontal-panel">
+                <img src="splash.png">
+                <img src="assets/cc1.png">
+                <img src="assets/cc5.png" style="object-position: bottom center;">
+                <img src="assets/cc10.png" style="object-position: top center;">
+            </div>
+
+            <div class="vertical-panel" style="color: white;">
+                <h2><b>Non-Machine Learning</b></h2>
+                <p>
+                    The space is a reconstruction of the room I lived in from ages
+                    ten to twenty-two, remade from memory. The game is posited as an
+                    escape room - and the door is unlocked. Outside is an empty and
+                    endless traversable space, inside there are no puzzles to solve.
+                </p>
+                <p>
+                    You can sleep on my bed or exercise on my rowing machine, start
+                    my computer to look through my files. Connecting the right cable
+                    (this is trivial), you can watch a few classical movies I used to like on
+                    the television I bought with my life insurance.
+                </p>
+
+                <p>
+                    These are things I've kept with me: some I can measure, some I’ve lost.
+                    But this room will always be mine. I have very few memories from my time
+                    here; little happened. Mostly I wanted to leave.
+                </p>
+
+                <p>
+                    Pressing Escape will shut down the game,<br>
+                    leaving you free to do something useful.
+                </p>
+            </div>
+
+            <div class="horizontal-panel">
+                <img src="assets/workingcond1.png">
+                <video controls loop muted>
+                    <source src="assets/non-machine2_4x3.mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="vertical-panel" style="color: white;">
+                <h2><i>Ap.</i> <b>Working Conditions</b></h2>
+                <p>
+                    The space is a 3D reconstruction of the room I lived in from age
+                    ten to twenty-two, made from memory. Half the game thus posits as an
+                    escape room - but the door is unlocked.
+                    Outside is an empty and endless space: inside there are no puzzles to solve.
+                </p>
+                <p>
+                    You can sleep on my bed or train on my rowing machine, start
+                    my computer and look through my files. Connecting the right cable, you can watch a few movies I used to like, on
+                    the television I bought with my own life insurance.
+                </p>
+
+                <p>
+                    These are things I've kept with me: some I can measure, some I’ve lost.
+                    But this room will always be mine. I have few memories from my time
+                    here; very little happened. Mostly I wanted to leave.
+                </p>
+
+                <p>
+                    Pressing Escape will shut down the game,<br>
+                    leaving you free to do something useful.
+                </p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

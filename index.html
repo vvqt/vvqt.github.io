@@ -1,44 +1,80 @@
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8">
-    <title>markus</title>
-    <link rel="icon" type="image/png" href="favicon.png">
-    <link rel="stylesheet" href="style.css"/>
-  </head>
-  <body>
-    <div class="intro"><h1>Id->M</h1></div>
+<head>
+    <meta charset="UTF-8" name="viewport" content="width=device-width,initial-scale=1,minimum-scale=1,maximum-scale=5">
+    <title>Portfolio / Markus Björkberger</title>
 
-<!--    <div class="video43x18">-->
-<!--    <h2>Developments of Voice</h2>-->
-      <div class="video43x18" style="padding:41.86% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/909763578?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Retard Manifesto: The Musical!"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap" rel="stylesheet">
 
-    <div class="video43x18" style="padding:41.86% 0 0 0;position:relative;"><iframe src="https://player.vimeo.com/video/853073233?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" style="position:absolute;top:0;left:0;width:100%;height:100%;" title="Developments of Voice"></iframe></div><script src="https://player.vimeo.com/api/player.js"></script>
-    <!--      <iframe src="https://player.vimeo.com/video/909763578?badge=0&amp;autopause=0&amp;player_id=0&amp;app_id=58479" width="1920" height="804" frameborder="0" allow="autoplay; fullscreen; picture-in-picture; clipboard-write" title="Retard Manifesto: The Musical!"></iframe>-->
-<!--    </div>-->
-    <!-- TTttTT -->
-    <!-- <h2>TTttTt</h2> -->
-<!--    <img class="page" id="first" width="3840" height="2160" src="https://i.imgur.com/QCXnAFj.jpg" draggable="false">-->
+    <link rel="stylesheet" href="_assets/css/panels/pane.css">
+    <link rel="stylesheet" href="_assets/css/panels/series.css">
 
-    <!-- Crowd Crush -->
-    <h2 id="first">Crowd Crush</h2>
-    <img class="page" width="3840" height="2160" src="https://i.imgur.com/yt2h0Y2.jpg" draggable="false">
-    <img class="page" width="3840" height="2160" src="https://i.imgur.com/hEFIXh1.jpg" draggable="false">
-    <img class="page" width="3840" height="2160" src="https://i.imgur.com/vQpIFVw.jpg" draggable="false">
+    <style>
+        * {
+            box-sizing: border-box;
+            touch-action: none;
+        }
 
-    <!-- Galton -->
-    <h2>Eugenesis</h2>
-    <img class="page" width="3840" height="2160" src="https://i.imgur.com/zsKA1Ht.jpg" draggable="false">
-    <img class="page" width="3840" height="2160" src="https://i.imgur.com/JEgwVq0.jpg" draggable="false">
-    <img class="page" width="3840" height="2160" src="https://i.imgur.com/pNYNAmJ.jpg" draggable="false">
+        html,
+        body {
+            width: 100%; height: 100%;
+            padding: 0;margin: 0;border: 0;
+            background: #111;
+        }
 
-    <!-- Safe Skills -->
-    <h2>Safe Skills</h2>
-    <img class="page" width="3840" height="2160" src="https://i.imgur.com/asxPvHJ.jpg" draggable="false">
-    <img class="page" width="3840" height="2160" src="https://i.imgur.com/XOXjGNK.jpg" draggable="false">
+        html {
+            overflow: hidden;
+        }
 
-    <!-- No Gift -->
-    <h2>No Gift</h2>
-    <img class="page" width="3840" height="2160" src="https://i.imgur.com/1QfTj59.jpg" draggable="false">
-    <img class="page" width="3840" height="2160" src="https://i.imgur.com/C3Zp2t5.jpg" draggable="false">
-  </body>
+        canvas {
+            position: absolute;
+            width: 100%; height: 100%;
+        }
+
+        h2, h3, h4, h5, h6 {
+            margin: 0;
+        }
+
+        a {
+            all: unset;
+            cursor: pointer;
+        }
+
+
+
+
+    </style>
+
+    <link rel="stylesheet" href="_assets/css/home.css"/>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+
+
+    <script src="data.js"></script>
+    <script src="_assets/js/layout.js"></script>
+    <script src="_assets/js/config.js"></script>
+    <script src="_assets/js/util.js" type="module"></script>
+    <script src="_assets/js/scroller.js" type="module"></script>
+    <script src="_assets/js/panes.js" type="module"></script>
+</head>
+<body>
+    <header>
+        <div id="header_name_container">
+            <h1>Markus <i>Aad</i></h1> <h1>Björkberger</h1>
+        </div>
+    </header>
+    <main id="panes"></main>
+    <canvas id="glpanes"></canvas>
+
+    <div id="cross">
+        <div>
+            <svg viewBox="0 0 22 22">
+                <polygon class="st0" points="22 11.751 0 11.751 0 10.249 22 10.249 22 11"></polygon>
+                <polygon class="st0" points="11.751 0 11.751 22 10.249 22 10.249 0 11 0"></polygon>
+            </svg>
+        </div>
+    </div>
+</body>
 </html>

@@ -1,0 +1,182 @@
+
+
+.video-section-panel
+{
+    aspect-ratio: 43/18;
+    display: grid;
+    /*flex-wrap: wrap;*/
+    grid-template-columns: 1fr;
+    /*grid-template-columns: repeat(7, 1fr);*/
+    /*grid-template-rows: repeat(10, 1fr);*/
+    max-width: 50vw;
+
+    width: 50%;
+    /*width: calc((50vw / 2) * 2 );*/
+    height: auto;
+
+
+    /*background: #fffa;*/
+    gap: min(1.5%, 1em);
+    /*gap: ;*/
+    /*gap: 2%;*/
+    /*align-content: space-between;*/
+    /*justify-content: space-between;*/
+    /*place-content: space-between;*/
+    /*place-items: safe end  center;*/
+
+    /*margin: 5% auto 2% auto;*/
+    margin: 0 0 2% 0;
+    /*z-index: 1;*/
+    /*position: absolute;*/
+    /*background: #fff;*/
+    /*border: 2em solid #ccc;*/
+    /*box-shadow: #fff 0 0 5px 5px;*/
+    /*border: 1px solid black;*/
+}
+
+.video-section-grid
+{
+
+    aspect-ratio: 43/18;
+    display: grid;
+    grid-template-columns: repeat(7, 1fr);
+    /*grid-template-rows: repeat(10, 1fr);*/
+    /*max-width: 50vw;*/
+
+    /*width: 100%;*/
+    /*width: calc((50vw / 2) * 2 );*/
+    /*height: min-content;*/
+
+
+
+    /*gap: min(1.5%, 0.5em);*/
+    /*gap: ;*/
+    /*gap: 1% 0.4%;*/
+    /*gap: 0 0.8%;*/
+    gap: calc(0.43% * 2) calc(0.18% * 3);
+    align-content: space-between;
+    justify-content: space-between;
+    place-content: space-between;
+    place-items: end  center;
+
+
+    /*margin: 5% auto 2% auto;*/
+    /*margin: 0 0 2% 0;*/
+    /*z-index: 1;*/
+    /*position: absolute;*/
+    /*background: #fff;*/
+    /*border: 2em solid #ccc;*/
+    /*box-shadow: #fff 0 0 5px 5px;*/
+    /*border: 1px solid black;*/
+    /*border-radius: 15px;*/
+
+    /*border-radius: 5px;*/
+    /*padding: 2rem;*/
+    /*margin: 2rem;*/
+    /*padding: 5rem;*/
+    /*backdrop-filter: saturate(15%);*/
+}
+
+img.video-section-thumb {
+    /*max-width: calc(1/9 * 100%);*/
+    /*aspect-ratio: 43/18;*/
+    /*max-width: 100%;*/
+    width: 100%;
+    height: auto;
+    /*opacity: 85%;*/
+    filter: brightness(60%) contrast(95%) saturate(125%);
+    /*border-radius: 2%;*/
+    /*border: 2px solid #fff5;*/
+    opacity: 100%;
+    /*filter: blur(5px);*/
+
+    /*padding: 6pt 8pt;*/
+    /*margin: 6pt 8pt;*/
+    transition: box-shadow 0.3s ease-out, filter 1s .1s ease-out, border .3s ease-out, opacity 1s .1s ease-in;
+    /*box-shadow: #f8aa 0 0 0 2px;*/
+    /*padding: 1em;*/
+    /*box-shadow: #fff0 0 0 0 2px;*/
+    /*grid-column: 2 / span 2;*/
+
+    /*z-index: 1;*/
+    /*box-shadow: #fff5 0 0 0 2px;*/
+    /*border: 1px solid #111;*/
+    /*image-rendering: pixelated;*/
+}
+
+
+
+.video-section-thumb:not(:hover):has(~ .video-section-thumb:hover),
+.video-section-thumb:hover ~ .video-section-thumb
+{
+    /*transition: opacity 1s ease, filter 1s ease;*/
+    transition: filter 2s ease-in, opacity 2s ease-out;
+    filter: brightness(35%) contrast(30%) saturate(50);
+    opacity: 50%;
+}
+
+.video-section-thumb:hover {
+    /*border: 2px solid white;*/
+    /*width: 120%;*/
+    /*justify-self:  center;*/
+    /*transform: scale(1.2);*/
+
+    /*transform: scale(150%);*/
+    /*transform-origin: top left;*/
+    /*clip-path: polygon(0 0, 100% 0, 100% 100%, 31% 100%);*/
+    /*object-fit: fill;*/
+    /*perspective: 500px;*/
+    box-shadow: #fffa 0 0 0 1px;
+    /*opacity: 100%;*/
+    filter: brightness(110%);
+    /*border: 15px solid #feca;*/
+
+    transition: box-shadow 0s, filter 0s 0s, border .0s;
+    /*place-self: stretch;*/
+    /*padding: 0;*/
+    /*box-shadow: inset 0 0 1px 1px #fff;*/
+    /*outline: 2px solid #fffd;*/
+    /*border: 2px solid #ffff;*/
+}
+
+/*.video-section-thumb:hover ~ .video-section-thumb {*/
+/*    opacity: 25%;*/
+/*}*/
+/*.video-section-grid:hover .video-section-thumb:not(:hover) {*/
+/*    opacity: 25%;*/
+/*}*/
+
+.vimeo43x18 {
+
+    /*width: 1920px;*/
+
+    /*--scalar: calc(85vw / 640);*/
+    /*--scalar: 1.5;*/
+    /*transform: scale(var(--scalar));*/
+    /*resize: both;*/
+    /*width: 85vw;*/
+    /*margin: 15%;*/
+    /*max-width: 50vw;*/
+    /*width: 800px;*/
+    /*height: auto;*/
+    /*margin: 5vw;*/
+    /*position: absolute;*/
+    aspect-ratio: 43/18;
+    background: #111;
+    max-width: 50%;
+    width: 100%;
+    height: auto;
+    /*top: 5vw;*/
+    z-index: -1;
+    /*left: 5vw;*/
+    /*margin: 0;*/
+    opacity: 100%;
+
+}
+
+#rmPlayer {
+    aspect-ratio: 43/18;
+    width: 100%;
+    height: auto;
+
+}

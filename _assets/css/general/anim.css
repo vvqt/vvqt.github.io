@@ -1,0 +1,37 @@
+.animable-text {
+    /*animation: anim-up 25s 1s ease-in forwards;*/
+    text-rendering: geometricPrecision;
+    transform-style: preserve-3d;
+    transform: translateZ(0.00001px);
+}
+
+.anim-up {
+    --start: 25vh;
+    --delta: 25vh;
+    position: relative;
+    top: var(--start);
+    animation: anim-up 25s 1s ease-in forwards;
+    text-rendering: geometricPrecision;
+    transform-style: preserve-3d;
+}
+
+.anim-zoom-in {
+    animation: anim-zoom-in 50s 1s ease forwards;
+    text-rendering: geometricPrecision;
+    transform-style: preserve-3d;
+}
+
+@keyframes anim-up {
+    from {transform: translateY(0) translateZ(0.00001px);}
+    to {transform: translateY(calc(-1 * var(--delta))) translateZ(0.0001px);}
+}
+
+@keyframes anim-zoom {
+    from {transform: translateZ(0.00001px);}
+    to {transform: translateZ(var(--delta));}
+}
+
+@keyframes anim-slide {
+    from {transform: translateX(0) translateZ(0.00001px);}
+    to {transform: translateX(var(--delta)) translateZ(0.0001px);}
+}

@@ -1,0 +1,100 @@
+/*.img-panels {*/
+/*    display: grid;*/
+/*    grid-template-rows: 2fr auto;*/
+/*    grid-auto-flow: column;*/
+/*    gap: 1rem;*/
+
+/*    place-content: center center;*/
+/*    place-items: start  stretch;*/
+
+/*    !*height: 100%;*!*/
+/*    margin: auto auto;*/
+
+/*    > img {*/
+
+/*        aspect-ratio: 43/18;*/
+/*        object-fit: cover;*/
+/*        object-position: center;*/
+/*        max-width: 97rem;*/
+/*    !*min(97rem, 125vw);*!*/
+/*        max-height: calc(50vh - 0.5rem);*/
+/*        !*height: auto;*!*/
+/*        width: 97rem;*/
+/*    }*/
+/*}*/
+
+#Installation {
+    position: relative;
+    z-index: 0;
+    width: auto;
+    flex-grow: 1;
+}
+
+/*#horizontal {*/
+/*    width: fit-content;*/
+/*    position: relative;*/
+/*    overflow: revert !important;*/
+/*}*/
+
+.img-panels {
+    /*display: flex;*/
+    /*flex-wrap: wrap;*/
+    /*flex-direction: column;*/
+
+    display: grid;
+    grid-auto-flow: column;
+    grid-template-rows: repeat(2, auto);
+
+    gap: 1rem;
+    flex-grow: 1;
+
+    /*place-content: center center;*/
+    /*place-items: start  stretch;*/
+
+    /*height: 100%;*/
+    max-height: 92vh;
+    width: auto;
+    /*position: relative;*/
+    /*margin: auto auto;*/
+
+    > img {
+        aspect-ratio: 43/18;
+        object-fit: cover;
+        object-position: center;
+
+        display: inline-block;
+
+        /*max-width: 97rem;*/
+
+        /*min(97rem, 125vw);*/
+        /*max-height: calc(50vh - 0.5rem);*/
+        /*height: auto;*/
+        /*width: 97rem;*/
+
+        height: calc(42vh - 0.5rem);
+        /*height: 41rem;*/
+    }
+}
+
+@media screen and (max-height: 50rem) {
+
+}
+
+.img-panel {
+    aspect-ratio: 43/18;
+    object-fit: cover;
+    object-position: center;
+    max-width: 97rem;
+    /*min(97rem, 125vw);*/
+    max-height: calc(50vh - 0.5rem);
+    /*height: auto;*/
+    width: 97rem;
+
+    > img {
+        width: 100%;
+        height: 100%;
+        aspect-ratio: 43/18;
+        object-fit: cover;
+        object-position: center;
+    }
+}

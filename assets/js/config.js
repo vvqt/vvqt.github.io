@@ -4,7 +4,7 @@ const CFG_PANE_MIN_WIDTH = () => vmax(10)
 const CFG_PANE_MIN_HEIGHT = () => vh(70)
 const CFG_PANE_GAP = () => vmin(2)
 
-const CFG_SUPERSAMPLING_RATIO = 2
+const CFG_SUPERSAMPLING_RATIO = 1
 const CFG_RESIZE_TIMEOUT = 300
 
 const CFG_USE_SERIES = true

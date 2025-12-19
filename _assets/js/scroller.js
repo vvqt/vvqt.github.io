@@ -1,7 +1,7 @@
-import {Ease, Util} from "./util.js";
+// import {Ease, Util} from "./util.js";
 
 
-export default class Scroller {
+class Scroller {
     constructor(cb, cbdown, cbup, useNativeScroll) {
         this.isNative = useNativeScroll;
 

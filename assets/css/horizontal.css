@@ -109,8 +109,6 @@ header.splash-title {
     }
 }
 
-
-
 header.splash-inline {
     position: relative;
     /*max-width: 150vw;*/
@@ -122,12 +120,8 @@ header.splash-inline {
 
     > h1 {
         position: static;
-
-
     }
 }
-
-
 
 section {
     position: relative;

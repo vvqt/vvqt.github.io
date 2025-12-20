@@ -26,7 +26,7 @@ header {
 
         line-height: 0.3;
         text-align: justify;
-        text-justify: inter-character;
+        /*text-justify: inter-character;*/
 
         letter-spacing: 0.008em;
 
@@ -68,22 +68,16 @@ header {
 section.pane_overlay {
     position: relative;
     width: 100%; height: 100%;
-    /*padding: 1em;*/
-    /*margin: auto;*/
-
     font-family: "Geist", sans-serif;
     font-optical-sizing: auto;
-    font-weight: 900;
     font-style: normal;
     font-kerning: normal;
-    line-height: 1;
 }
 
 /* Contains title and material+year subline */
 .work_text_container {
     position: absolute;
     top: calc(30% - 2.5lh);
-    /*left: 0.5em;*/
     left: 0;
     margin: 1vh;
     display: flex;
@@ -104,20 +98,14 @@ section.pane_overlay {
     /*flex-shrink: 1;*/
 
     align-items: stretch;
-    /*justify-content: space-between;*/
+
     gap: 2em;
     width: auto;
-
-    /*font-size: 10pt;*/
-    /*font-size: 1.302vh;*/
     font-size: 1.5vh;
     padding: 0.5lh 1pt 0 1pt;
 
     /*margin: 0.25em;*/
     > h3 {
-        /*font-size: 12pt;*/
-        /*font-weight: 550;*/
-        /*all: unset;*/
         /*font-size: 1.302vh;*/
         font-size: 1em;
         font-weight: 600;
@@ -143,47 +131,17 @@ section.pane_overlay {
     flex-shrink: 1;
     flex-basis: 1px;
     margin: 0;
-    /*font-size: max(1.5em, 300%);*/
-    /*font-size: 33pt;*/
     font-weight: 700;
-    /*width: auto;*/
-    /*max-width: 100%;*/
     text-wrap: balance;
     width: auto;
-    /*min-width: min-content;*/
-    /*white-space: collapse;*/
-    /*max-width: fit-content;*/
     font-size: 3.673vh;
-    /*letter-spacing: -0.2px;*/
-    /*word-spacing: -2.3px;*/
     letter-spacing: -0.005em;
     word-spacing: -0.052em;
-
-    /*position: absolute;*/
-    /*top: calc(40% - 2.5lh);*/
-    /*left: 0.5em;*/
-    /*color: #ddd;*/
-    /*text-align: left;*/
-
-
-    /*font-size: 2.088vw;*/
-
 }
 
 .work_material {
     font-style: italic;
     font-synthesis-style: auto;
-}
-
-#panes > a > section > h3 {
-    position: absolute;
-    font-size: max(1em, 12pt);
-    margin: 0;
-}
-
-h3.year {
-    top: -1lh;
-    right: 0.6em;
 }
 
 #panes > a {
@@ -205,7 +163,6 @@ h3.year {
     align-items: center;
     z-index: 50;
     left: 0;
-    /*bottom: 10.5vh;*/
     transform: translateZ(0.0001px);
     perspective: 1px;
     transform-style: preserve-3d;
@@ -223,10 +180,7 @@ h3.year {
 .series_title {
     position: relative;
     color: #ccc;
-    /*font-style: italic;*/
     top: 2.1vh;
-
-    /*font-size: 16pt;*/
     font-size: 1.753vh;
     font-family:  "Geist", sans-serif;
     font-optical-sizing: auto;
